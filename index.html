@@ -26,6 +26,19 @@
             font-size: 15px;
 
         }
+
+        h5 {
+   color: #000000; 
+   font-family: sans-serif;
+   border: 3px solid;
+   border-radius: 15px 10px 10px 10px;
+   font-size: 40px;
+   display: inline-block; /* Ajusta el borde al texto */
+   padding: 10px 20px; /* Aumenta el espacio interno */
+}
+
+
+
         input[type="submit"] {
         font-size: 15px;
         padding: 10px 20px;
@@ -53,11 +66,31 @@
             display: block;
             margin-top: 10px;
         }
+        .imagen-esquina {
+        position: absolute;
+        top: 30px;  /* Ajusta la distancia desde arriba */
+        left: 15px; /* Ajusta la distancia desde la izquierda */
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        height: auto; /* Mantiene la proporción */
+    }
+    .imagen-esquina2 {
+        position: absolute;
+        top: 30px;  /* Ajusta la distancia desde arriba */
+        right: 15px; /* Ajusta la distancia desde la izquierda */
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        height: auto; /* Mantiene la proporción */
+    }
+</style>
 
-    
-    </style>
+<img src="imageness/bus.png" alt="Bus" class="imagen-esquina">
+<img src="imageness/bus2.png" alt="Bus" class="imagen-esquina2">
 
  <form>
+    <fieldset style="background-color: #a3d0cf; text-align: center;">
+        <legend style=" background-color: #049599; font-size: 40px; font-weight: arial; color: #000000;">BUSRICK</legend>
+    </fieldset>
+    
+
        <fieldset style="background-color: #049599;">
         <center><legend><font face="arial" color="black"><h3><b>DATOS PERSONALES</h3></legend></center></font>
         </fieldset>
