@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica_6</title>
+</head>
+<body bgcolor="#a3d0cf">
+    <style type="text/css">
+        h1{
+        color: #3c5455;
+        border: 15px;
+        font-size:15px
+    
+        }
+
+        h2{
+        color: #195491;
+        border: 15px;
+        font-size:15px
+            
+        }
+        h4{
+
+            color: red;
+            font-size: 15px;
+
+        }
+        input[type="submit"] {
+        font-size: 15px;
+        padding: 10px 20px;
+        width: 100px;
+        height: 40px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: block; /* Hace que el botón sea un bloque */
+        margin: 20px auto; /* Centra horizontalmente */
+}
+
+.form-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+    
+    </style>
+
+ <form>
+       <fieldset style="background-color: #049599;">
+        <center><legend><font face="arial" color="black"><h3><b>DATOS PERSONALES</h3></legend></center></font>
+        </fieldset>
+       <fieldset>
+   <br><br> <center><table border="0%", witdh="400%">
+        <tr>
+            <td>
+            <h1>NOMBRE</h1>
+            </td>
+            <td>
+                <input type=text placeholder="escribe tu nombre" name="nombre">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            <h1>APELLIDO</h1>
+            </td>
+            <td>
+                <input type=text placeholder="ingresa tus apedillos" name="apellido">
+            </td>
+        </tr>
+
+        <tr>
+            <td witdh="80%">
+             <h1>EDAD</h1>
+            </td>
+            <td>
+             <input type="number" placeholder="Ingresa la edad" name="edad">
+            </td>
+         </tr>
+         <tr>
+            <td witdh="80%">
+             <h1>NUMERO TELEFONICO</h1>
+            </td>
+            <td>
+             <input type="text" placeholder="Digita tu numero" name="edad">
+            </td>
+         </tr>
+
+        <tr>
+           <td>
+            <h1>CORREO</h1>
+           </td>
+           <td witdh="80%">
+            <input type=email placeholder="escribe tu correo" name="CORREO ELECTRONICO">
+           </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+           <h1> GENERO</h1>
+            </td>
+            <td>
+            <table>
+                <tr>
+                    <h2><td><input type=radio name="genero" value="masculino"> masculino</td>
+                    <td><input type=radio name="genero" value="femenino"> femenino</td>
+                    <td><input type=radio name="genero" value="no_definido"> no definido</td></h2>
+                </tr>
+            </table>
+            </td>
+        
+         </tr>
+         
+
+         <tr>
+            <td witdh="80%">
+             <h1>ESTADO CIVIL</h1>
+            </td>
+            <td>
+             <select name="estado_civil">
+                <h2><option selected value="" disabled>seleccione uno</option>
+                <option value="casado">casado</option>
+                <option value="soltero">soltero</option>
+                <option value="viudo">viudo</option></h2>
+             </select>
+            </td>
+         </tr>
+
+         <tr>
+            <td witdh="80%">
+             <h1>¿PADECE DE ALGUNA<br>ENFERMEDAD?</h1>
+            </td>
+            <td>
+             <select name="salud">
+                <option selected value="" disabled>seleccione uno</option>
+                <h2><option value="si">Si</option>
+                <option value="no">No</option></h2>
+             </select>
+            </td>
+         </tr>
+
+         <tr>
+            <td witdh="80%">
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿CUAL?</h1>
+            </td>
+            <td>
+                <br><textarea name="comentarios" id=""></textarea>
+             </td>
+         </tr>
+
+
+
+        
+    </fieldset>
+    </table></center><br>
+    </fieldset>
+
+    <fieldset style="background-color: #049599;">
+        <center><legend><font face="arial" color="black"><h3><b>DATOS DE VIAJE</h3></legend></center></font>
+    </fieldset>
+
+    <fieldset>
+
+        <center><table border="0%", witdh="400%">
+
+            <tr>
+                <td><h1>CANTIDAD DE BOLETOS</h1></td>
+                <td>&nbsp;&nbsp;
+                    <select name="adultos">
+                    <h2><option selected value="" disabled>OBLIGATORIO</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="5">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="otro">otro</option></h2>
+
+                 </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><h1>HORA DE LLEGADA</h1></td>
+                <td>&nbsp;&nbsp;&nbsp;<input type="time" placeholder="Obligatorio"></td>
+            </tr>
+
+            <tr>
+                <td><h1>CANTIDAD DE ADULTOS<br>(18 en adelante)</h1></td>
+                <td>&nbsp;&nbsp;
+                    <select name="adultos">
+                    <h2><option selected value="" disabled>OBLIGATORIO</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="otro">otro</option></h2>
+
+                 </select>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td><h1>CANTIDAD DE NIÑOS<br>(5 a 18 años)</h1></td>
+                <td>&nbsp;&nbsp;
+                    <select name="adultos">
+                    <h2><option selected value="" disabled>OBLIGATORIO</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="ninguno">Ninguno</option></h2>
+
+                 </select>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    <h1>LUGAR DESTINO</h1>
+                </td>
+                <td>&nbsp;&nbsp;
+                    <select name="destino">
+                        <h2><option selected value="" disabled>Lugar de llegada</option>
+                        <option value="oaxaca">Oaxaca</option>
+                        <option value="acapulco">Oaxaca</option>
+                        <option value="chilpancingo">chilpancingo</option>
+                        <option value="taxco">Taxco</option>
+                        <option value="chiapas">Chiapas</option>
+                        <option value="sinaloa">Sinaloa</option>
+                        <option value="monterrey">Monterrey</option></h2>
+
+
+
+                    </select>
+
+                </td>
+
+                <tr>
+                    <td><h1>FECHA PREVISTA DE LLEGADA</h1></td>
+                    <td>&nbsp;&nbsp;
+                            <h4>&nbsp;&nbsp;&nbsp;<input type="number"  placeholder="DIA" name="dia">&nbsp;&nbsp;Requerido<br>
+                            &nbsp;&nbsp;&nbsp;<input type="number"  placeholder="MES" name="mes">&nbsp;&nbsp;Requerido<br>
+                            &nbsp;&nbsp;&nbsp;<input type="number"  placeholder="AÑO" name="ano">&nbsp;&nbsp;Requerido</h4>
+        
+                    </td>
+        
+                 </tr>
+
+                 
+                <tr>
+                    <td><h1>FECHA DE REGRESO</h1></td>
+                    <td>
+                    &nbsp;&nbsp;&nbsp;<input type="date">
+        
+                    </td>
+        
+                 </tr>
+
+                 <tr>
+                    <td><Br><h1>MOTIVO DEL VIAJE</h1></td>
+
+                    <td>
+                        <br>&nbsp;&nbsp;&nbsp;<textarea name="motivo" id=""></textarea> 
+                    </td>
+                 </tr>
+
+
+
+
+            </tr>
+        </table></center>
+        </fieldset>
+
+        <fieldset style="background-color: #049599;">
+            <center><legend><font face="arial" color="black"><h3><b>DATOS DE PAGO</h3></legend></center></font>
+        </fieldset>
+
+        <fieldset>
+
+        <center><table  border="0%", witdh="400%">
+
+
+            <tr>
+                <h1>ELIGA SU METODO DE PAGO</h1>
+                    <select>
+                    <option selected value="" disabled>OBLIGATORIO</option>
+                    <option value="efectivo">EFECTIVO</option>
+                    <option value="tarjeta ">TARJETA</option>
+                <td><h1>
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                
+                    <label for="card-holder">Nombre del titular</label>
+                    <input type="text" id="card-holder" name="card-holder" placeholder="Nombre en la tarjeta">
+                
+                    <label for="expiry-date">Fecha de vencimiento</label>
+                    <input type="month" id="expiry-date" name="expiry-date">
+                
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" name="cvv" maxlength="3" placeholder="XXX"></td></h1>
+            </tr>
+
+
+            <tr>
+                <td>
+                   <br><br><input type="submit" value="ENVIAR">
+    
+                </td>
+               </tr>
+
+               
+
+
+
+
+        </table></center>   
+        
+        </b>    
+    </fieldset>
+
+
+    </form>
+</body>
+</html>
